@@ -12,11 +12,22 @@
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">Videos with Subtitles Demo</h1>
           <p class="col-md-8 fs-4">
-            In this demo, you will see how you can add subtitles and captions to HTML5 videos
+            In this demo, you will see how you can add subtitles and captions to HTML5 videos. Click
+            <a href="https://www.3playmedia.com/blog/captions-vs-subtitles-do-you-know-the-difference/"> here</a>
+            to know the difference between Subtitles and Captions.
           </p>
         </div>
       </div>
-
+      <section class="" style="background-color: crimson;">
+        <div class="container-fluid text-center">
+          <video controls preload="metadata">
+            <source src="videos/sintel-short.mp4" type="video/mp4">
+            <track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/sintel-en.vtt" default>
+            <!-- <track label="Deutsch" kind="subtitles" srclang="de" src="subtitles/vtt/sintel-de.vtt">
+            <track label="Español" kind="subtitles" srclang="es" src="subtitles/vtt/sintel-es.vtt"> -->
+          </video>
+        </div>
+      </section>
 
     </div>
 
