@@ -3,22 +3,53 @@
 }
 
 <div class="p-4 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Videos with Subtitles Demo</h1>
-          <p class="col-md-8 fs-4">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Videos with Subtitles Demo</h1>
+        <p class="col-md-8 fs-4">
             In this demo, you will see how you can add subtitles and captions to HTML5 videos. Click
             <a href="https://www.3playmedia.com/blog/captions-vs-subtitles-do-you-know-the-difference/"> here</a>
             to know the difference between Subtitles and Captions.
-          </p>
-        </div>
-      </div>
-      <section>
-        <div class="container-fluid text-center">
-          <video controls preload="metadata">
+        </p>
+    </div>
+</div>
+<section>
+    <h3>Basic example video with subtitles</h3>
+    <div class="container-fluid my-3 text-center">
+        <video controls preload="metadata">
             <source src="videos/sintel-short.mp4" type="video/mp4">
             <track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/sintel-en.vtt" default>
             <track label="Deutsch" kind="subtitles" srclang="de" src="subtitles/vtt/sintel-de.vtt">
             <track label="Español" kind="subtitles" srclang="es" src="subtitles/vtt/sintel-es.vtt">
-          </video>
-        </div>
-      </section>
+        </video>
+    </div>
+    <p>
+        This shows a basic usage for VTT Subtitles inside a <code>&lt;video&gt;</code> tag
+    </p>
+    <div class="highlight w-75">
+        <pre>
+            <code class="language-html">
+                &lt;video controls preload="metadata"&gt;
+                    &lt;source src="videos/sintel-short.mp4" type="video/mp4"&gt;
+                    &lt;track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/sintel-en.vtt" default&gt;
+                    &lt;track label="Deutsch" kind="subtitles" srclang="de" src="subtitles/vtt/sintel-de.vtt"&gt;
+                    &lt;track label="Español" kind="subtitles" srclang="es" src="subtitles/vtt/sintel-es.vtt"&gt;
+                &lt;/video&gt;
+            </code>
+        </pre>
+    </div>
+</section>
+<hr />
+<section>
+    <h3>Example video with styled subtitles</h3>
+    <div class="container-fluid my-3 text-center">
+        <video controls preload="metadata">
+            <source src="videos/sintel-short.mp4" type="video/mp4">
+            <track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/sintel-styled-en.vtt" default>
+            <track label="Deutsch" kind="subtitles" srclang="de" src="subtitles/vtt/sintel-de.vtt">
+            <track label="Español" kind="subtitles" srclang="es" src="subtitles/vtt/sintel-es.vtt">
+        </video>
+    </div>
+    <p>
+        This shows the styles inside the VTT Subtitle file 
+    </p>
+</section>
